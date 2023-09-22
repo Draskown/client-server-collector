@@ -5,11 +5,11 @@
         "02": 2
     },
     "directories": {
-        "base": "D:\\Projects\\Python\\Practice",
-        "model": "D:\\Projects\\Python\\Practice\\Model",
-        "images": "D:\\Projects\\Python\\Practice\\Images",
-        "train": "D:\\Projects\\Python\\Practice\\Images\\Train",
-        "test": "D:\\Projects\\Python\\Practice\\Images\\Test"
+        "base": "d:\\Projects\\Python\\Practice",
+        "model": "d:\\Projects\\Python\\Practice\\Model",
+        "images": "d:\\Projects\\Python\\Practice\\Images",
+        "train": "d:\\Projects\\Python\\Practice\\Images\\Train",
+        "test": "d:\\Projects\\Python\\Practice\\Images\\Test"
     },
     "parameters": {
         "left": 1,

@@ -13,25 +13,25 @@ def write_parameters(num, params):
     }
 
     requests.post(
-        "http://192.168.100.3:8000/currentuser/",
+        "http://127.0.0.1:8000/currentuser/",
         json=user_d
     )
 
 
 def write_error(num):
     requests.post(
-        "http://192.168.100.3:8000/currentuser/handle",
+        "http://127.0.0.1:8000/currentuser/handle",
         json={"user_number": num}
     )
 
 
 def get_parameters():
     return requests.get(
-        "http://192.168.100.3:8000/currentuser/handle"
+        "http://127.0.0.1:8000/currentuser/handle"
     ).json().values()
 
 
 def get_current_user():
     return requests.get(
-        "http://192.168.100.3:8000/currentuser/"
+        "http://127.0.0.1:8000/currentuser/"
     ).json()

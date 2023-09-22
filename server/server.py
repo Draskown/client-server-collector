@@ -3,7 +3,6 @@ from flask import Flask, request, url_for, \
 from datetime import timedelta
 import db_handler as db
 
-
 EXPIRE_MINUTES = 1
 
 api = Flask(__name__)

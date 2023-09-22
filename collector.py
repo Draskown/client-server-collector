@@ -117,7 +117,7 @@ def collectPerson(number):
 
 def find_last_index(directory):
     index = -1
-    for root, dirs, files in walk(directory):
+    for _, _, files in walk(directory):
         for file in files:
             if (file.endswith("png") or file.endswith("jpg")) and \
                     index == -1:

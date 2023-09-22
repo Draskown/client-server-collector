@@ -25,7 +25,7 @@ def loadDirs():
                    "test": testDir}
 
     currentId = 0
-    for root, dirs, files in walk(directories["images"]):
+    for root, _, files in walk(directories["images"]):
         for file in files:
             if file.endswith("png") or file.endswith("jpg"):
                 label = basename(root).replace(" ", "-").lower()
