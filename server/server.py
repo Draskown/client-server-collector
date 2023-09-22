@@ -1,7 +1,7 @@
+import db_handler as db
+from datetime import timedelta
 from flask import Flask, request, url_for, \
     jsonify, redirect, render_template, session
-from datetime import timedelta
-import db_handler as db
 
 EXPIRE_MINUTES = 1
 

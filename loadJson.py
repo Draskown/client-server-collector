@@ -1,7 +1,7 @@
-from os.path import join as pathJoin, dirname, \
-    abspath, basename
 from os import walk
 from json import load, dump
+from os.path import join as pathJoin, dirname, \
+    abspath, basename
 
 labels = {}
 directories = {}

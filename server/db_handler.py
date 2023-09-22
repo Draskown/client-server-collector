@@ -1,6 +1,6 @@
+from datetime import datetime
 from os.path import join as pathJoin, dirname, abspath
 from pyodbc import connect as dbConnect, Error as bdError
-from datetime import datetime
 
 baseDir = dirname(abspath(__file__))
 filePath = pathJoin(baseDir, "users.accdb")

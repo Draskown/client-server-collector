@@ -1,12 +1,9 @@
-from cv2 import CascadeClassifier, VideoCapture, cvtColor,\
-    COLOR_BGR2GRAY, waitKey, destroyAllWindows, resize, \
-    MORPH_OPEN, morphologyEx, LUT, bilateralFilter
-from numpy import expand_dims, argmax
-from keras.models import load_model
-from loadJson import directories
 from os.path import join
-from numpy import average as npAvg, empty as npEmpty, \
-    uint8, clip as npClip, ones as npOnes
+from loadJson import directories
+from keras.models import load_model
+from numpy import expand_dims, argmax
+from cv2 import CascadeClassifier, VideoCapture, cvtColor,\
+    COLOR_BGR2GRAY, waitKey, destroyAllWindows, resize
 
 
 INDENT = 20

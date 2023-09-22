@@ -1,18 +1,17 @@
+from faces import train
 from os import mkdir, walk
+from time import time, sleep
+from threading import Thread
+from server_requests import write_parameters
+from loadJson import directories, pull_parameters
 from os.path import join as pathJoin, \
      exists as pathExists
 from cv2 import CascadeClassifier, cvtColor, \
     COLOR_BGR2GRAY, imwrite, VideoCapture,\
     waitKey, destroyAllWindows
-from server_requests import write_parameters
-from loadJson import directories, pull_parameters
-from threading import Thread
-from time import time, sleep
-from faces import train
 
 stop = False
 frame = []
-
 
 def wait4command():
     print("Print \'s\' to stop operating")

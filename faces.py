@@ -1,11 +1,11 @@
-from keras_preprocessing.image import ImageDataGenerator
 from os import mkdir
+from loadJson import loadDirs
+from keras.models import Sequential
 from os.path import join as pathJoin, \
     exists as pathExists
-from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D,\
     Flatten, Dense, Dropout
-from loadJson import loadDirs
+from keras_preprocessing.image import ImageDataGenerator
 
 BATCH = 5
 DROPOUT = 0.5
