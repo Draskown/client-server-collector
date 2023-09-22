@@ -2,3 +2,5 @@ keras~=2.4.3
 opencv-python~=4.5.2.54
 numpy~=1.19.5
 requests~=2.24.0
+Flask~=2.0.1
+pyodbc~=4.0.31
